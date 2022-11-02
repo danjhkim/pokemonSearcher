@@ -1,0 +1,52 @@
+.pokeform {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+.form {
+	border: 4px solid rgb(27, 26, 26);
+	border-radius: 0.3em;
+	padding: 2em;
+}
+
+.input,
+fieldset {
+	border: none;
+}
+
+.input input[type='input'] {
+	border-radius: 0.4em;
+	height: 1.7rem;
+	width: 15rem;
+}
+
+.errors {
+	font-size: 0.9rem;
+	color: #f40109;
+	margin-left: 0.8em;
+	height: 0.5rem;
+}
+
+.btn {
+	border: none;
+	background-color: #f76617 !important;
+	color: white !important;
+	outline: none !important;
+	box-shadow: none !important;
+	cursor: pointer;
+	padding: 1em;
+	width: 18rem;
+}
+
+.btn:focus {
+	outline: none !important;
+	background-color: #9a3a06 !important;
+}
+
+.buttonBoxForm {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
