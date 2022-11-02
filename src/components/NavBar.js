@@ -7,6 +7,8 @@ const NavBar = ({
 	removeChosenPokemon,
 	removeStepCookie,
 	setStep,
+	setStepCookie,
+	step,
 }) => {
 	let logged = cookies.user;
 
@@ -19,10 +21,17 @@ const NavBar = ({
 		removeStepCookie('params', { path: '/' });
 	};
 
+	const bookMark = () => {
+		setStepCookie(step);
+	};
+
 	return (
 		<div className='navBar'>
 			<nav onClick={signOut}>
 				{logged ? <span>Restart</span> : <span>Sign Up</span>}
+			</nav>
+			<nav onClick={bookMark}>
+				{logged ? <span>Save Progress</span> : null}
 			</nav>
 		</div>
 	);

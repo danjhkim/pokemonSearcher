@@ -23,6 +23,8 @@ function App() {
 						removeChosenPokemon={removeChosenPokemon}
 						removeStepCookie={removeStepCookie}
 						setStep={setStep}
+						setStepCookie={setStepCookie}
+						step={step}
 					/>
 					<Routes>
 						<Route

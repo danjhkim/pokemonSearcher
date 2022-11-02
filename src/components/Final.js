@@ -10,7 +10,7 @@ const Final = ({ chosenPokemon, cookies }) => {
 		setSaving(true);
 		setTimeout(() => {
 			setSaving(false);
-			// potentially save info to backend database
+			// potentially save info to backend database and redirect to another page.
 			alert('Your info has been saved!');
 		}, 1000);
 	};
